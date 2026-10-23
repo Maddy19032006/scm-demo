@@ -1,7 +1,6 @@
+def calculate_total(price, quantity, tax=0):
+    total = price * quantity
+    return total + tax
 
-def calculate_total(price, quantity):
-    return price * quantity
-
-def get_order_summary(price, quantity):
-    total = calculate_total(price, quantity)
-    return f"Order total: {total}"
+def apply_discount(total):
+    return total * 0.85
